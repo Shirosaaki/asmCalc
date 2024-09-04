@@ -7,10 +7,11 @@
 
 NAME	=	my_bc
 
-SRC		=	main.asm	\
-			putchar.asm	\
-			putnbr.asm	\
-			getnbr.asm	\
+SRC		=	main.asm		\
+			putchar.asm		\
+			putnbr.asm		\
+			getnbr.asm		\
+			getlennbr.asm	\
 
 OBJ		=	$(SRC:.asm=.o)
 

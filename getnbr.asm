@@ -8,12 +8,12 @@ my_getnbr:
     mov r8, 1
     mov r9, rdi
     mov rcx, 0
+    cmp byte [r9 + rcx], '-'
+    jz .neg
 
 .loop:
     cmp byte [r9 + rcx], 0
     jz .end
-    cmp byte [r9 + rcx], '-'
-    jz .neg
     cmp byte [r9 + rcx], '0'
     jl .end
     cmp byte [r9 + rcx], '9'
